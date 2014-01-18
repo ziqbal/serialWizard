@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--
+          0000000000
+          1111111111
+          2222222222
+          3333333333
+          4444444444
+          5555555555
+          6666666666
+          7777777777
+          8888888888
+          9999999999
+          ZafarIqbal
+-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+    
+<title>Demo2</title>
+
+
+
+
+<script src="modernizr.js"></script>
+<script src="jquery-2.0.3.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" />
+<link rel="stylesheet" href="normalize.css">
+
+<link rel="stylesheet" href="boot.css">
+<link rel="stylesheet" href="teacms.css">
+<script src="boot.js"></script>
+
+<style>
+._projectname,.level2{
+margin:3px;
+
+}
+
+.footerContainer{
+font-size:small;
+}
+
+.maintitle{
+font-weight:bold;
+font-size:large;
+
+}
+.navtreebreadcrumbslevelsiblings{
+background-color:#ddd;
+font-size:small;
+
+}
+</style>
+<script>
+
+</script>
+
+
+</head>
+
+
+<body>
+    
+
+
+
+
+<style>
+ .container{
+	background-color:;
+	color:;
+ }    
+</style>
+
+
+<div class='container'>
+
+
+<!--/TOPBAR/-->
+<style>
+#topbar{
+}
+</style>
+<table id='topbar' cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td>	
+
+<style>
+._projectname_9qHJ_Container{
+	background-color:;
+	color:;
+}
+._projectname_9qHJ_Container:hover{
+	background-color:;
+	color:;
+}
+</style>
+
+
+<a href='homepage.html'>
+<div class='_projectname _projectname_9qHJ_Container'>
+serialWizard
+</div>
+</a>
+</td>
+<td>	
+
+</td>	
+<td>	
+
+<style>
+._level2_C4vg0_Container{
+
+	background-color:;
+	color:;
+	
+	float:left;
+
+}
+
+._level2_C4vg0_Container:hover{
+	background-color:;
+	color:;
+}
+
+</style>
+
+<a href="page-h.html">
+<div class='level2 _level2_C4vg0_Container'>
+Instructions</div>
+</a>
+
+
+<style>
+._level2_2OCw1_Container{
+
+	background-color:;
+	color:;
+	
+	float:left;
+
+}
+
+._level2_2OCw1_Container:hover{
+	background-color:;
+	color:;
+}
+
+</style>
+
+<a href="demo1-9.html">
+<div class='level2 _level2_2OCw1_Container'>
+Demo1</div>
+</a>
+
+
+<style>
+._level2_N4gu2_Container{
+
+	background-color:;
+	color:;
+	
+	float:left;
+
+}
+
+._level2_N4gu2_Container:hover{
+	background-color:;
+	color:;
+}
+
+</style>
+
+<a href="demo2-e.html">
+<div class='level2 _level2_N4gu2_Container'>
+Demo2</div>
+</a>
+
+
+<style>
+._level2_SuxU3_Container{
+
+	background-color:;
+	color:;
+	
+	float:left;
+
+}
+
+._level2_SuxU3_Container:hover{
+	background-color:;
+	color:;
+}
+
+</style>
+
+<a href="demo3-g.html">
+<div class='level2 _level2_SuxU3_Container'>
+Demo3</div>
+</a>
+
+
+</td>	
+<td>
+</td>	
+</tr>
+</table>
+<!--\TOPBAR\-->
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+
+<td class='leftcolumn'>
+	
+
+
+
+
+
+
+
+</td>
+
+<td class='middlecol'>
+	
+
+
+<style>
+ .pageContainer{
+    text-align: justify;
+ }    
+</style>
+
+<div class='pageContainer _collapse'>
+<style>
+._maintitle_w3c50_Container{
+}
+</style>
+
+<div class='maintitle _maintitle_w3c50_Container'>Demo2</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+    
+$(function(){
+    
+    
+    statusContainer=$('#statusContainer');
+    ringContainer=$('#ringContainer');
+    
+    function success(data){
+        statusContainer.removeClass('statusError').addClass('statusSuccess');
+        
+        ringContainer.empty();
+        
+        
+        l=data.length
+        for(i=0;i<l;i++){
+            y=data[i];
+            ringContainer.append("<div class='ringItem' style='height:"+y+"px;'></div>");
+        }
+    }
+ 
+    function err(){
+        statusContainer.removeClass('statusSuccess').addClass('statusError');
+     }
+    
+    $.ajaxSetup({
+        dataType: "json",
+        url: '/json',
+        cache: false ,
+        success: success,
+        error: err
+    });
+    
+    function ticktock(){ 
+        $.ajax();
+        setTimeout(ticktock,20);
+    }
+    ticktock();
+ 
+
+});    
+    
+</script>
+
+<style>
+    
+#ringContainer{
+    clear:both;    
+}   
+.ringItem{
+    border:1px solid #FFEEEE;
+    float:left;
+    padding:0px;
+    width:5px;
+    font-size: x-small;
+    background-color: green;
+    color:white;
+}
+
+#statusContainer{
+    float:left;
+    border:1px solid black;
+    width:100px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.statusSuccess{
+    background-color: green;
+    color:white;
+}
+.statusError{
+    background-color: red;
+    color:white;
+}
+    
+</style>
+
+<div id='statusContainer'>STATUS</div>
+
+<div id='ringContainer'>
+</div>
+
+
+
+
+</td>
+
+<td class='rightcolumn'>
+
+
+
+
+
+
+</td>
+
+</tr>
+</table>
+
+
+<style>
+	
+#bottombar table{
+/*
+margin-left: auto;
+margin-right: auto;
+*/
+}	
+.footerContainer{
+	background-color:;
+	color:;
+}
+.footerContainer:hover{
+	background-color:;
+	color:;
+}
+</style>
+
+
+<div id='bottombar'>
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+	
+
+
+<td>
+<a href="http://zaf.io/">	
+<div class='footerContainer'>
+rev 1 , serialWizard, Zafar Iqbal , http://zaf.io/
+</div>
+</a>
+</td>
+
+
+</tr>
+</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28389160-1']);
+_gaq.push(['_setDomainName', 'dangerousbend.com']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+</body>
+</html>
+<!--_TEACMS_?UR=demo2-e.html&PT=67426325952da468698da2191135292&ID=6-->
+
+
+
+<!--_PC_?TN=1390039454-->

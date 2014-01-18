@@ -1,0 +1,58 @@
+
+html{
+overflow-y: scroll;   
+}
+body {
+  font-family: 'Open Sans', serif;
+  width: 100%; 
+}
+
+
+h1 { margin: 0px; padding: 0px; }
+h2 { margin: 0px; padding: 0px; }
+h3 { margin: 0px; padding: 0px; }
+h4 { margin: 0px; padding: 0px; }
+h5 { margin: 0px; padding: 0px; }
+h6 { margin: 0px; padding: 0px; }
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+.container {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.clear{
+	clear: both;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+
+table{
+}
+table tr td{
+	vertical-align: top;
+}
+.leftcolumn{
+	width:192px;
+}
+.middlecol{
+	width:576px;
+}
+.rightcolumn{
+	width:192px;
+}
+
+/* ************** */
+
+
+
