@@ -4,7 +4,7 @@
 
 # The serial port to read data from
 SERIALPORT = '/dev/tty.usbmodem641' # Mac
-#SERIALPORT = '/dev/dev/ttyACM0' # Linux
+#SERIALPORT = '/dev/ttyACM0' # Linux
 #SERIALPORT = 'COM6' # Microsoft Windows
 
 ##########################################################
