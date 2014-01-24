@@ -22,4 +22,4 @@ serialwizard.py
 
 - View User Interface in web browser using http://127.0.0.1:8888 (or whatever port you chose)
 
-- Make Stuff!
+- Win Friends and Influence People !
