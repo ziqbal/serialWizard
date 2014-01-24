@@ -1,7 +1,7 @@
 serialWizard
 ============
 
-A single python script to transport serial port data and serve it via http to a web client with several demos to visualise the data.
+A single cross platform python script to transport serial port data and serve it via http to a web client with several demos to visualise the data.
 
 On Microsoft Windows copy the files into a folder in your PythonXYZ installation.
 
@@ -22,4 +22,4 @@ serialwizard.py
 
 - View User Interface in web browser using http://127.0.0.1:8888 (or whatever port you chose)
 
-
+- Make Stuff!
