@@ -7,6 +7,8 @@ On Microsoft Windows copy the files into a folder in your PythonXYZ installation
 
 This is alpha version code running on a cliff edge so it may work out of the box or fail completely.
 
+Prerequisites are Python and pySerial - tested using 2.7 so may or may not work on other versions.
+
 serialwizard.py
 ---------------
 
